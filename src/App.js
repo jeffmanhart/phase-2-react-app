@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from './NavBar'
+import { Outlet, Navigate, useNavigate} from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function App() {
+
+//Navigation is not working at all oof
+  const navigate = useNavigate();
+  useEffect(() =>{
+    navigate("/weather");
+})
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      {<Navigate to="/weather" />}
     </div>
   );
 }
 
 export default App;
+ 
