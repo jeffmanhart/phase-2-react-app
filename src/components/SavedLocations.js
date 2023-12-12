@@ -1,7 +1,6 @@
 import React from "react";
 
 function Locations() {
-  const bio = "lorem Ipsum"
     return (
     <div id="Locations">
       <h2>Saved Locations</h2>

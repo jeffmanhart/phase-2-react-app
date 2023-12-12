@@ -10,10 +10,6 @@ const routes = [
         element: <App />,
         children: [
             {
-              path: "/",
-              element: <Weather />,
-            }, 
-            {
               path: "/weather",
               element: <Weather />,
             }, 
