@@ -1,7 +1,7 @@
 import App from './App';
-import Weather from "./components/Weather";
+import Activity from "./components/Activity";
 import About from "./components/About";
-import Locations from "./components/SavedLocations";
+import SavedActivities from "./components/SavedActivities";
 
 
 const routes = [
@@ -9,17 +9,21 @@ const routes = [
         path: '/',
         element: <App />,
         children: [
-            {
-              path: "/weather",
-              element: <Weather />,
+          {
+            path: "/",
+            element: <Activity />
+          },   
+          {
+              path: "/bored",
+              element: <Activity />,
             }, 
             {
               path: "/about",
               element: <About />,
             },
             {
-              path: "/locations",
-              element: <Locations />,
+              path: "/activities",
+              element: <SavedActivities />,
             }
         ]
     }

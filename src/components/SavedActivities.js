@@ -1,9 +1,9 @@
 import React from "react";
 
-function Locations() {
+function SavedActivities() {
     return (
-    <div id="Locations">
-      <h2>Saved Locations</h2>
+    <div id="activities">
+      <h2>Saved Activities</h2>
       <ul>
         {
         //get list of locations from DB
@@ -14,4 +14,4 @@ function Locations() {
   );
 }
 
-export default Locations;
+export default SavedActivities;

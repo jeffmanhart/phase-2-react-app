@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink} from "react-router-dom";
 
 const NavBar = () => {
-const links = ["weather", "locations", "about"];
+const links = ["bored", "activities", "about"];
 
   return ( <nav>
     {links.map((e)=> {
