@@ -15,10 +15,9 @@ function Activity() {
   }
 
   function onBoredFormSubmit(searchTerms){
-    console.log(searchTerms)
     fetch(`http://www.boredapi.com/api/activity?type=${searchTerms.type}&participants=${searchTerms.participants}`)
     .then((r) => r.json())
-    .then((data)=> console.log(data));
+    .then((data)=> setActivity(data));
   }
 
   return (
@@ -39,4 +38,4 @@ function Activity() {
     );
   }
   
-  export default Activity;
+  export default Activity; 

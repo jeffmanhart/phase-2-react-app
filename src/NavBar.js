@@ -8,7 +8,8 @@ const links = ["bored", "activities", "about"];
     {links.map((e)=> {
     return <NavLink 
         to={'/' + e}
-        className="nav-link" >
+        className="nav-link" 
+        key={e}>
             {e.toUpperCase()}
         </NavLink>}
     )}

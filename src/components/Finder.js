@@ -2,7 +2,7 @@ import React , { useState } from "react";
 
 function Finder({onBoredFormSubmit , onRandomQuery}) {
   const [formData, setFormData] = useState({
-    type: "",
+    type: "recreational",
     participants: 1,
   });
   function handleSubmit(e){
