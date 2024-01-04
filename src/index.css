@@ -4,7 +4,22 @@ code {
     monospace;
 }
 
+table {
+  text-align: 'center';
+  width: '100%'
+}
+th {
+  border: '1px solid #3498DB';
+  background: '#3498DB';
+  color: 'white';
+  padding: '5px'
+}
 
+td {
+  border: '1px solid #85C1E9';
+  background: 'white';
+  padding: '5px'
+}
 nav {
   position: fixed;
   top: 0;
@@ -77,3 +92,10 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.card {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
