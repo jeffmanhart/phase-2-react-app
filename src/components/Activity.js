@@ -23,7 +23,20 @@ function Activity() {
 
   function handleSaveCheck(){
     setCheck(!saveChecked)
-    
+    fetch("http://localhost:3000/activities",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        activity : activity.activity,
+        kind : activity.type,
+        participants : activity.participants,
+        price : activity.price,
+        link :activity.link
+      }
+        )
+    })
   }
 
   return (
@@ -33,11 +46,6 @@ function Activity() {
         <Finder onBoredFormSubmit={onBoredFormSubmit} onRandomQuery={getRandomActivity}/>
         <hr></hr>
         <div id="idea">
-          <h3>{activity.activity}</h3>
-          <a>{activity.type}</a>
-          <p>You can do this activity with {activity.participants === 1 ? "1 person" : activity.participants + " people" }</p>
-          <p>Could cost ${activity.price}</p>
-          <a href={activity.link}>{activity.link}</a>
           <label>
             <input type="checkbox"
               value={saveChecked}
@@ -45,6 +53,11 @@ function Activity() {
             />
             {"Save Idea for Later"}
           </label>
+          <h3>{activity.activity}</h3>
+          <a>{activity.type}</a>
+          <p>You can do this activity with {activity.participants === 1 ? "1 person" : activity.participants + " people" }</p>
+          <p>Could cost ${activity.price} or more</p>
+          <a href={activity.link}>{activity.link}</a>
         </div>
       </main>
       

@@ -1,0 +1,36 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "activity": "test",
+      "kind": "recreational",
+      "participants": 1,
+      "price": 200,
+      "link": "http://localhost:3001/"
+    },
+    {
+      "activity": "Visit your past teachers",
+      "kind": "social",
+      "participants": 1,
+      "price": 0,
+      "link": "",
+      "id": 2
+    },
+    {
+      "activity": "Make homemade ice cream",
+      "kind": "cooking",
+      "participants": 1,
+      "price": 0.2,
+      "link": "",
+      "id": 3
+    },
+    {
+      "activity": "Write a short story",
+      "kind": "recreational",
+      "participants": 1,
+      "price": 0,
+      "link": "",
+      "id": 4
+    }
+  ]
+}
