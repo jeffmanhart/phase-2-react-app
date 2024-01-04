@@ -1,4 +1,5 @@
-This project was built using the create react app templates.  This will allow users to input their location and help them find the weather information for that area.  They can then save and manage their locations which will be saved in a db.json.
+This project was built using the create react app templates.  This will allow users to find an idea for an activity to do when they are feeling bored.  Leveraging the Boredapi.com I am fetching random ideas or allowing users to search for more specific ideas.
+The Api will return and activity, the potential price, number of ideal participants, any links if available, and a category for the activity.
 
 # Getting Started
 
@@ -13,19 +14,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 
-### `npm run build`
+### `json-server --watch db.json`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Stands up the db.json that gets and POSTs activities for the user
 

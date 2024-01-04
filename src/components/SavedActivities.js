@@ -8,7 +8,7 @@ function SavedActivities() {
     fetch("http://localhost:3000/activities")
     .then((r) => r.json())
     .then((data)=> setSaved(data));
-  })
+  },[])
 
   const activityList = saved.map((a) => (
     <ActivityCard key={a.id} activity={a} />
