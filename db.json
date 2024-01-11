@@ -47,6 +47,22 @@
       "price": 0.05,
       "link": "",
       "id": 6
+    },
+    {
+      "activity": "Learn how to whistle with your fingers",
+      "kind": "education",
+      "participants": 1,
+      "price": 0,
+      "link": "",
+      "id": 7
+    },
+    {
+      "activity": "Write a thank you letter to an influential person in your life",
+      "kind": "social",
+      "participants": 1,
+      "price": 0,
+      "link": "",
+      "id": 8
     }
   ]
 }
